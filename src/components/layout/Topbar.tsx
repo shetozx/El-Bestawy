@@ -16,7 +16,7 @@ export function Topbar({ onSearch }: TopbarProps) {
     document.documentElement.classList.contains("dark")
   );
   const updateSettings = useSettingsStore((s) => s.updateSettings);
-  const storeName = useSettingsStore((s) => s.getStoreName());
+  
 
   const handleSearch = (value: string) => {
     setSearchValue(value);
